@@ -1,0 +1,9 @@
+sensor,parameter,n,reservoirs,rho,rho_ci_matchups,rho_ci_reservoirs,MAPE,MAPE_ci_matchups,bias_ratio,bias_ci_matchups
+Sentinel-2,Turbidity,19,6,0.905,0.70 to 0.98,0.63 to 0.97,35.661,25 to 45,0.675,0.55 to 0.78
+Sentinel-2,Secchi depth,29,6,0.614,0.25 to 0.85,-0.06 to 0.93,23.598,10 to 46,0.964,0.78 to 1.05
+Sentinel-2,TSS,8,5,0.431,-0.68 to 1.00,-0.74 to 1.00,49.199,24 to 71,0.563,0.29 to 1.07
+Sentinel-2,Chlorophyll-a,19,6,0.411,-0.03 to 0.74,-0.10 to 0.79,39.347,26 to 57,0.715,0.50 to 0.83
+Landsat 8/9,Turbidity,23,9,0.662,0.26 to 0.88,-0.14 to 0.92,24.199,11 to 37,0.907,0.77 to 1.02
+Landsat 8/9,Secchi depth,28,9,0.743,0.52 to 0.86,0.38 to 0.93,28.936,15 to 46,0.834,0.69 to 0.94
+Landsat 8/9,TSS,10,5,0.62,-0.07 to 0.97,-0.67 to 0.98,55.816,23 to 70,1.166,0.61 to 1.69
+Landsat 8/9,Chlorophyll-a,18,9,0.287,-0.17 to 0.64,-0.13 to 0.60,60.842,37 to 78,0.803,0.39 to 1.32

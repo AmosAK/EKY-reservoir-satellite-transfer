@@ -1,0 +1,9 @@
+sensor,parameter,n,reservoirs,rho_all,rho_loo_min,rho_loo_max,most_influential_reservoir,rho_within_reservoirs
+Sentinel-2,Turbidity,19,6,0.905,0.868,0.929,Dewey,0.867
+Sentinel-2,Secchi depth,29,6,0.614,0.416,0.924,Yatesville,0.571
+Sentinel-2,TSS,8,5,0.431,0.144,0.685,Paintsville,0.811
+Sentinel-2,Chlorophyll-a,19,6,0.411,0.276,0.542,Paintsville,0.105
+Landsat 8/9,Turbidity,23,9,0.662,0.426,0.794,Dewey,0.69
+Landsat 8/9,Secchi depth,28,9,0.743,0.621,0.831,Cannon Creek,0.578
+Landsat 8/9,TSS,10,5,0.62,0.381,0.712,Cranks Creek,0.687
+Landsat 8/9,Chlorophyll-a,18,9,0.287,0.197,0.334,Cannon Creek,0.4

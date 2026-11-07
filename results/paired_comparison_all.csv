@@ -1,0 +1,13 @@
+parameter,model,n,stations,R2,R2_lo,R2_hi,MAPE,rho,p_vs_landsat,pct_stations_s2_better
+Turbidity,Landsat 8/9,1409,414,0.558,0.428,0.66,28.725,0.778,,
+Turbidity,"S2, Landsat bands only",1409,414,0.5,0.408,0.583,32.395,0.717,,
+Turbidity,"S2, all bands",1409,414,0.612,0.489,0.715,24.542,0.815,0.0,58.696
+Secchi depth,Landsat 8/9,1991,437,0.595,0.529,0.649,26.777,0.782,,
+Secchi depth,"S2, Landsat bands only",1991,437,0.597,0.543,0.642,28.669,0.773,,
+Secchi depth,"S2, all bands",1991,437,0.737,0.693,0.768,21.322,0.873,0.0,62.471
+TSS,Landsat 8/9,1045,308,0.525,0.456,0.584,28.832,0.716,,
+TSS,"S2, Landsat bands only",1045,308,0.459,0.387,0.518,30.633,0.653,,
+TSS,"S2, all bands",1045,308,0.601,0.527,0.661,24.328,0.773,0.0,59.091
+Chlorophyll-a,Landsat 8/9,2195,470,0.392,0.308,0.456,50.757,0.61,,
+Chlorophyll-a,"S2, Landsat bands only",2195,470,0.406,0.335,0.462,49.6,0.632,,
+Chlorophyll-a,"S2, all bands",2195,470,0.695,0.661,0.729,34.447,0.853,0.0,72.128

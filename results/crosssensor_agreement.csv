@@ -1,0 +1,5 @@
+parameter,same_day_pairs,rho,median_landsat_over_s2,median_abs_difference_pct
+Turbidity,469,0.885,1.326,38.177
+Secchi depth,539,0.873,0.842,23.033
+TSS,398,0.831,1.399,42.167
+Chlorophyll-a,516,0.519,1.734,77.818

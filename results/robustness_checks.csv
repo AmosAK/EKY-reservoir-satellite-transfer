@@ -1,0 +1,65 @@
+sensor,parameter,variant,n_train,eky_n,eky_rho,eky_MAPE,eky_bias_ratio
+Sentinel-2,Turbidity,as published,3890,19,0.905,35.661,0.675
+Sentinel-2,Turbidity,scene cloud < 80%,3813,19,0.907,34.606,0.686
+Sentinel-2,Turbidity,scene cloud < 50%,3511,19,0.902,35.248,0.678
+Sentinel-2,Turbidity,scene cloud < 20%,2571,19,0.893,25.91,0.741
+Sentinel-2,Turbidity,Appalachian lakes only,1079,19,0.816,23.49,0.872
+Sentinel-2,Turbidity,state-balanced weights,3890,19,0.881,39.231,0.648
+Sentinel-2,Turbidity,coalfield lakes removed,3852,19,0.891,35.925,0.641
+Sentinel-2,Turbidity,coalfield + 10 km removed,3847,19,0.896,33.91,0.661
+Sentinel-2,Secchi depth,as published,4956,29,0.614,23.598,0.964
+Sentinel-2,Secchi depth,scene cloud < 80%,4907,29,0.614,24.45,0.966
+Sentinel-2,Secchi depth,scene cloud < 50%,4470,29,0.594,27.456,0.956
+Sentinel-2,Secchi depth,scene cloud < 20%,3249,29,0.596,24.273,0.947
+Sentinel-2,Secchi depth,Appalachian lakes only,1724,29,0.619,22.099,1.025
+Sentinel-2,Secchi depth,state-balanced weights,4956,29,0.549,30.411,0.871
+Sentinel-2,Secchi depth,coalfield lakes removed,4950,29,0.608,22.892,0.948
+Sentinel-2,Secchi depth,coalfield + 10 km removed,4941,29,0.61,22.337,0.959
+Sentinel-2,TSS,as published,2380,8,0.431,49.199,0.563
+Sentinel-2,TSS,scene cloud < 80%,2336,8,0.431,46.081,0.578
+Sentinel-2,TSS,scene cloud < 50%,2143,8,0.395,51.258,0.564
+Sentinel-2,TSS,scene cloud < 20%,1592,8,0.431,45.065,0.558
+Sentinel-2,TSS,Appalachian lakes only,672,8,0.683,45.407,0.546
+Sentinel-2,TSS,state-balanced weights,2380,8,0.491,44.61,0.683
+Sentinel-2,TSS,coalfield lakes removed,2364,8,0.431,51.316,0.57
+Sentinel-2,TSS,coalfield + 10 km removed,2360,8,0.431,49.016,0.557
+Sentinel-2,Chlorophyll-a,as published,5483,19,0.411,39.347,0.715
+Sentinel-2,Chlorophyll-a,scene cloud < 80%,5402,19,0.382,41.634,0.726
+Sentinel-2,Chlorophyll-a,scene cloud < 50%,4967,19,0.312,34.111,0.728
+Sentinel-2,Chlorophyll-a,scene cloud < 20%,3628,19,0.347,40.431,0.682
+Sentinel-2,Chlorophyll-a,Appalachian lakes only,1933,19,0.309,48.874,0.629
+Sentinel-2,Chlorophyll-a,state-balanced weights,5483,19,0.546,30.922,0.721
+Sentinel-2,Chlorophyll-a,coalfield lakes removed,5446,19,0.326,39.97,0.703
+Sentinel-2,Chlorophyll-a,coalfield + 10 km removed,5433,19,0.316,39.737,0.723
+Landsat 8/9,Turbidity,as published,3354,23,0.662,24.199,0.907
+Landsat 8/9,Turbidity,scene cloud < 80%,3340,23,0.655,27.261,0.892
+Landsat 8/9,Turbidity,scene cloud < 50%,3144,23,0.695,26.26,0.805
+Landsat 8/9,Turbidity,scene cloud < 20%,2449,23,0.699,32.73,0.75
+Landsat 8/9,Turbidity,Appalachian lakes only,1116,23,0.697,33.717,0.68
+Landsat 8/9,Turbidity,state-balanced weights,3354,23,0.735,28.31,0.754
+Landsat 8/9,Turbidity,coalfield lakes removed,3338,23,0.657,24.93,0.893
+Landsat 8/9,Turbidity,coalfield + 10 km removed,3337,23,0.671,21.862,0.882
+Landsat 8/9,Secchi depth,as published,3992,28,0.743,28.936,0.834
+Landsat 8/9,Secchi depth,scene cloud < 80%,3962,28,0.746,26.249,0.836
+Landsat 8/9,Secchi depth,scene cloud < 50%,3685,28,0.731,26.98,0.829
+Landsat 8/9,Secchi depth,scene cloud < 20%,2835,28,0.719,23.247,0.835
+Landsat 8/9,Secchi depth,Appalachian lakes only,1418,28,0.721,19.639,0.952
+Landsat 8/9,Secchi depth,state-balanced weights,3992,28,0.734,30.439,0.745
+Landsat 8/9,Secchi depth,coalfield lakes removed,3975,28,0.743,29.333,0.844
+Landsat 8/9,Secchi depth,coalfield + 10 km removed,3962,28,0.742,26.615,0.836
+Landsat 8/9,TSS,as published,2062,10,0.62,55.816,1.166
+Landsat 8/9,TSS,scene cloud < 80%,2054,10,0.595,54.123,1.169
+Landsat 8/9,TSS,scene cloud < 50%,1948,10,0.62,45.759,1.197
+Landsat 8/9,TSS,scene cloud < 20%,1585,10,0.644,47.67,1.219
+Landsat 8/9,TSS,Appalachian lakes only,565,10,0.485,37.94,0.978
+Landsat 8/9,TSS,state-balanced weights,2062,10,0.534,44.691,1.22
+Landsat 8/9,TSS,coalfield lakes removed,2048,10,0.62,55.238,1.128
+Landsat 8/9,TSS,coalfield + 10 km removed,2044,10,0.595,56.665,1.086
+Landsat 8/9,Chlorophyll-a,as published,4740,18,0.287,60.842,0.803
+Landsat 8/9,Chlorophyll-a,scene cloud < 80%,4717,18,0.3,61.126,0.837
+Landsat 8/9,Chlorophyll-a,scene cloud < 50%,4407,18,0.262,60.332,0.813
+Landsat 8/9,Chlorophyll-a,scene cloud < 20%,3377,18,0.205,59.825,0.723
+Landsat 8/9,Chlorophyll-a,Appalachian lakes only,1787,18,0.149,65.169,0.637
+Landsat 8/9,Chlorophyll-a,state-balanced weights,4740,18,0.217,61.053,1.028
+Landsat 8/9,Chlorophyll-a,coalfield lakes removed,4717,18,0.247,58.188,0.824
+Landsat 8/9,Chlorophyll-a,coalfield + 10 km removed,4708,18,0.211,58.762,0.828

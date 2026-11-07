@@ -1,0 +1,13 @@
+reservoir,basin,watershed_km2,surface_area_km2,mean_depth_m,stations,field_visits_2015_2023,s2_test_matchups,landsat_test_matchups
+Buckhorn,Kentucky,1058,4.98,8.0,3,0,0,0
+Cannon Creek,Upper Cumberland,12,0.98,14.2,4,10,0,6
+Cave Run,Licking,2139,33.47,8.2,4,0,0,0
+Chenoa,Upper Cumberland,17,0.14,4.1,2,6,0,1
+Cranks Creek,Upper Cumberland,64,0.89,8.9,3,8,6,4
+Dewey,Big Sandy,534,4.45,4.8,3,9,3,6
+Fishtrap,Big Sandy,1011,4.58,10.2,3,6,0,1
+Grayson,Little Sandy,507,6.11,5.9,3,9,3,1
+Martins Fork,Upper Cumberland,144,1.38,3.3,1,0,0,0
+Paintsville,Big Sandy,240,4.61,10.9,5,16,7,1
+Smoky Valley,Tygarts Creek,34,0.14,3.2,2,7,2,1
+Yatesville,Big Sandy,538,9.07,5.2,4,16,8,7

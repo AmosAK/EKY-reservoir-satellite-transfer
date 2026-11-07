@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the article and this archive."
+title: "Data and code for: Transferring Sentinel-2 and Landsat 8/9 water-quality retrievals to data-scarce Appalachian coalfield reservoirs"
+type: software
+authors:
+  - family-names: Akwemoh
+    given-names: Amos Francis
+    orcid: "https://orcid.org/0009-0008-5530-8818"
+    affiliation: "Kentucky State University"
+  - family-names: Gyawali
+    given-names: Buddhi Raj
+    affiliation: "Kentucky State University"
+  - family-names: Basnet
+    given-names: Utkarsha
+    affiliation: "Kentucky State University"
+  - family-names: Zourarakis
+    given-names: Demetrio Periferachis
+    affiliation: "University of Kentucky"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-07"
+keywords: [Sentinel-2, Landsat, water quality, random forest, model transferability, reservoirs, Kentucky]

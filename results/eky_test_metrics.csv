@@ -1,0 +1,9 @@
+sensor,parameter,n,R2,MAPE,bias_ratio,rho,reservoirs
+Sentinel-2,Turbidity,19,0.664,35.661,0.675,0.905,6
+Sentinel-2,Secchi depth,29,0.305,23.598,0.964,0.614,6
+Sentinel-2,TSS,8,0.069,49.199,0.563,0.431,5
+Sentinel-2,Chlorophyll-a,19,-1.624,39.347,0.715,0.411,6
+Landsat 8/9,Turbidity,23,0.646,24.199,0.907,0.662,9
+Landsat 8/9,Secchi depth,28,-0.434,28.936,0.834,0.743,9
+Landsat 8/9,TSS,10,-0.04,55.816,1.166,0.62,5
+Landsat 8/9,Chlorophyll-a,18,-1.942,60.842,0.803,0.287,9
