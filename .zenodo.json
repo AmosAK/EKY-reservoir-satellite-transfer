@@ -1,0 +1,14 @@
+{
+  "title": "Data and code for: Transferring Sentinel-2 and Landsat 8/9 water-quality retrievals to data-scarce Appalachian coalfield reservoirs",
+  "upload_type": "software",
+  "description": "Screened satellite-in situ matchup datasets, Google Earth Engine scripts and Python code to reproduce the analyses in Akwemoh et al., 'Transferring Sentinel-2 and Landsat 8/9 Water-Quality Retrievals to Data-Scarce Appalachian Coalfield Reservoirs: A Withheld-Reservoir Test'. Random forest models for turbidity, Secchi depth, total suspended solids and chlorophyll-a were trained on lakes in seven U.S. states and tested on 12 withheld Eastern Kentucky reservoirs.",
+  "creators": [
+    {"name": "Akwemoh, Amos Francis", "affiliation": "Kentucky State University", "orcid": "0009-0008-5530-8818"},
+    {"name": "Gyawali, Buddhi Raj", "affiliation": "Kentucky State University"},
+    {"name": "Basnet, Utkarsha", "affiliation": "Kentucky State University"},
+    {"name": "Zourarakis, Demetrio Periferachis", "affiliation": "University of Kentucky"}
+  ],
+  "license": "MIT",
+  "keywords": ["Sentinel-2", "Landsat 8/9", "water quality", "random forest", "model transferability", "reservoirs", "Eastern Kentucky"],
+  "access_right": "open"
+}
