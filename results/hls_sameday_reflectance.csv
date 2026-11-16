@@ -1,0 +1,5 @@
+band,orig_n,orig_median_L_over_S2,orig_median_abs_diff_pct,hls_n,hls_median_L30_over_S30,hls_median_abs_diff_pct
+blue,668,0.652,37.7,522,1.088,29.1
+green,668,0.888,15.5,522,1.052,13.5
+red,668,0.897,19.6,522,1.013,17.4
+nir,646,1.242,39.2,520,0.747,30.7

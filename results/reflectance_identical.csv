@@ -1,0 +1,5 @@
+band,n,orig_median_ratio,orig_median_absdiff_pct,hls_median_ratio,hls_median_absdiff_pct,p_absdiff
+blue,423,0.658,37.0,1.086,27.2,0.0
+green,423,0.886,15.4,1.052,12.7,0.0
+red,423,0.905,19.2,1.014,16.3,0.0006
+nir,415,1.247,36.3,0.749,30.5,0.0687

@@ -1,0 +1,5 @@
+set,n,with_sampling_time,overpass_from_scene,within_3h,same_calendar_day,within_1d,median_gap_h_sameday
+training Sentinel-2,7109,6126,4679.0,907,1264,3700,1.24
+training Landsat 8/9,6200,4999,3504.0,633,998,3009,1.3
+EKY test Sentinel-2,29,29,,3,7,13,
+EKY test Landsat 8/9,28,28,,4,8,18,

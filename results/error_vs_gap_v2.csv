@@ -1,0 +1,49 @@
+sensor,parameter,gap_bin_h,median_abs_log_err,n
+Sentinel-2,Turbidity,"(-0.001, 3.0]",0.101,402
+Sentinel-2,Turbidity,"(3.0, 24.0]",0.122,629
+Sentinel-2,Turbidity,"(24.0, 48.0]",0.125,886
+Sentinel-2,Turbidity,"(48.0, 72.0]",0.141,687
+Sentinel-2,Turbidity,"(72.0, 100.0]",0.145,311
+Sentinel-2,Turbidity,"spearman(gap, error)",0.066,2915
+Sentinel-2,Secchi depth,"(-0.001, 3.0]",0.084,723
+Sentinel-2,Secchi depth,"(3.0, 24.0]",0.083,976
+Sentinel-2,Secchi depth,"(24.0, 48.0]",0.089,1472
+Sentinel-2,Secchi depth,"(48.0, 72.0]",0.092,1185
+Sentinel-2,Secchi depth,"(72.0, 100.0]",0.097,536
+Sentinel-2,Secchi depth,"spearman(gap, error)",0.051,4892
+Sentinel-2,TSS,"(-0.001, 3.0]",0.121,262
+Sentinel-2,TSS,"(3.0, 24.0]",0.112,347
+Sentinel-2,TSS,"(24.0, 48.0]",0.119,537
+Sentinel-2,TSS,"(48.0, 72.0]",0.12,428
+Sentinel-2,TSS,"(72.0, 100.0]",0.132,185
+Sentinel-2,TSS,"spearman(gap, error)",0.053,1759
+Sentinel-2,Chlorophyll-a,"(-0.001, 3.0]",0.155,759
+Sentinel-2,Chlorophyll-a,"(3.0, 24.0]",0.16,854
+Sentinel-2,Chlorophyll-a,"(24.0, 48.0]",0.166,1387
+Sentinel-2,Chlorophyll-a,"(48.0, 72.0]",0.174,1057
+Sentinel-2,Chlorophyll-a,"(72.0, 100.0]",0.161,468
+Sentinel-2,Chlorophyll-a,"spearman(gap, error)",0.03,4525
+Landsat 8/9,Turbidity,"(-0.001, 3.0]",0.153,299
+Landsat 8/9,Turbidity,"(3.0, 24.0]",0.173,407
+Landsat 8/9,Turbidity,"(24.0, 48.0]",0.185,628
+Landsat 8/9,Turbidity,"(48.0, 72.0]",0.198,578
+Landsat 8/9,Turbidity,"(72.0, 100.0]",0.166,248
+Landsat 8/9,Turbidity,"spearman(gap, error)",0.046,2160
+Landsat 8/9,Secchi depth,"(-0.001, 3.0]",0.107,520
+Landsat 8/9,Secchi depth,"(3.0, 24.0]",0.139,711
+Landsat 8/9,Secchi depth,"(24.0, 48.0]",0.124,1189
+Landsat 8/9,Secchi depth,"(48.0, 72.0]",0.117,1041
+Landsat 8/9,Secchi depth,"(72.0, 100.0]",0.14,493
+Landsat 8/9,Secchi depth,"spearman(gap, error)",0.02,3954
+Landsat 8/9,TSS,"(-0.001, 3.0]",0.138,221
+Landsat 8/9,TSS,"(3.0, 24.0]",0.162,246
+Landsat 8/9,TSS,"(24.0, 48.0]",0.149,425
+Landsat 8/9,TSS,"(48.0, 72.0]",0.157,404
+Landsat 8/9,TSS,"(72.0, 100.0]",0.157,172
+Landsat 8/9,TSS,"spearman(gap, error)",0.031,1468
+Landsat 8/9,Chlorophyll-a,"(-0.001, 3.0]",0.219,478
+Landsat 8/9,Chlorophyll-a,"(3.0, 24.0]",0.269,615
+Landsat 8/9,Chlorophyll-a,"(24.0, 48.0]",0.255,1105
+Landsat 8/9,Chlorophyll-a,"(48.0, 72.0]",0.262,933
+Landsat 8/9,Chlorophyll-a,"(72.0, 100.0]",0.264,430
+Landsat 8/9,Chlorophyll-a,"spearman(gap, error)",0.02,3561

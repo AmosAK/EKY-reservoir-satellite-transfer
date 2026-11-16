@@ -98,3 +98,26 @@ Code: MIT (see `LICENSE`). Data: CC BY 4.0 (see `LICENSE-DATA.md`).
 ## Contact
 
 Amos Francis Akwemoh, Center for Geospatial Intelligence and Environmental Security, Kentucky State University.
+
+## Revision analyses (v1.1.0)
+
+Added in response to editorial comments on the matchup window and on sensor harmonization.
+
+| Script (`scripts/revision/`) | Purpose | Output (`results/`) |
+|---|---|---|
+| `fetch_times.py` | Downloads field sampling times (ActivityStartTime) from the Water Quality Portal for the training stations | `data/wqp_sampling_times.csv` |
+| `h3_analysis.py` | Exact sampling-to-overpass gaps in hours; paired window test scored on identical ±3 h samples (Table 8); EKY test by training window; error vs time gap (Figure S1) | `window_paired_3h.csv`, `eky_by_window.csv`, `error_vs_gap_v2.csv`, `gap_coverage.csv` |
+| `hls_analysis.py` | HLS S30/L30 paired comparison, EKY test with HLS models, same-day reflectance agreement | `hls_paired_comparison.csv`, `hls_eky_test.csv`, `hls_sameday_reflectance.csv` |
+| `paired_analysis.py` | Six models (standard and HLS) on identical station-dates (Table 9); reflectance agreement on identical same-day pairs | `six_model_identical_samples.csv`, `reflectance_identical.csv` |
+
+HLS matchups (`data/hls/`) were extracted with `earth_engine/hls_matchups.js` (HLS v2.0, `NASA/HLS/HLSS30/v002` and `NASA/HLS/HLSL30/v002`) using the same stations, window and screening rules as the main analysis.
+
+Example (from the repository root):
+
+```bash
+python scripts/revision/hls_analysis.py data/hls data results
+python scripts/revision/paired_analysis.py data/hls data results
+python scripts/revision/h3_analysis.py data data/hls data/wqp_sampling_times.csv path/to/EKY_resultphyschem.csv results
+```
+
+`h3_analysis.py` also needs the EKY Water Quality Portal result file (sampling times for the EKY test stations), downloadable from https://www.waterqualitydata.us with organization 21KY_WQX.

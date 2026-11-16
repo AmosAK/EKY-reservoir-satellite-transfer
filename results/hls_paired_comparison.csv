@@ -1,0 +1,25 @@
+subset,parameter,model,n,stations,R2,MAPE,rho,p_vs_L30
+all,Turbidity,HLS L30,1052,350,0.56,29.4,0.77,
+all,Turbidity,"HLS S30, Landsat bands",1052,350,0.5,32.7,0.73,0.0522
+all,Turbidity,"HLS S30, all bands",1052,350,0.58,25.5,0.8,0.0
+all,Secchi depth,HLS L30,1369,369,0.61,27.2,0.78,
+all,Secchi depth,"HLS S30, Landsat bands",1369,369,0.59,29.1,0.77,0.1904
+all,Secchi depth,"HLS S30, all bands",1369,369,0.76,21.5,0.87,0.0
+all,TSS,HLS L30,767,254,0.53,27.7,0.72,
+all,TSS,"HLS S30, Landsat bands",767,254,0.48,30.7,0.68,0.1165
+all,TSS,"HLS S30, all bands",767,254,0.64,25.5,0.79,0.004
+all,Chlorophyll-a,HLS L30,1543,403,0.37,51.5,0.6,
+all,Chlorophyll-a,"HLS S30, Landsat bands",1543,403,0.39,50.9,0.63,0.8781
+all,Chlorophyll-a,"HLS S30, all bands",1543,403,0.67,35.3,0.83,0.0
+same_day,Turbidity,HLS L30,293,172,0.62,32.5,0.8,
+same_day,Turbidity,"HLS S30, Landsat bands",293,172,0.66,28.5,0.79,0.1121
+same_day,Turbidity,"HLS S30, all bands",293,172,0.71,23.8,0.83,0.0019
+same_day,Secchi depth,HLS L30,379,216,0.68,28.6,0.81,
+same_day,Secchi depth,"HLS S30, Landsat bands",379,216,0.67,28.5,0.8,0.4756
+same_day,Secchi depth,"HLS S30, all bands",379,216,0.77,23.0,0.87,0.0011
+same_day,TSS,HLS L30,199,120,0.41,29.1,0.66,
+same_day,TSS,"HLS S30, Landsat bands",199,120,0.5,27.4,0.71,0.0435
+same_day,TSS,"HLS S30, all bands",199,120,0.6,23.8,0.79,0.0003
+same_day,Chlorophyll-a,HLS L30,422,221,0.41,46.3,0.64,
+same_day,Chlorophyll-a,"HLS S30, Landsat bands",422,221,0.52,44.7,0.73,0.0186
+same_day,Chlorophyll-a,"HLS S30, all bands",422,221,0.74,30.1,0.88,0.0

@@ -1,0 +1,9 @@
+sensor,parameter,eky_n,rho_3h,ntrain_3h,rho_sameday,ntrain_sameday,rho_1d,ntrain_1d,rho_3d,ntrain_3d
+Sentinel-2,Turbidity,19,0.83,402,0.83,675,0.89,2010,0.91,3890
+Sentinel-2,Secchi depth,29,0.53,723,0.55,839,0.61,2602,0.61,4956
+Sentinel-2,TSS,8,0.43,262,0.34,411,0.43,1246,0.43,2380
+Sentinel-2,Chlorophyll-a,19,0.35,759,0.36,1008,0.4,2914,0.41,5483
+Landsat 8/9,Turbidity,23,0.61,299,0.61,612,0.69,1686,0.66,3354
+Landsat 8/9,Secchi depth,28,0.71,520,0.73,576,0.75,1915,0.74,3992
+Landsat 8/9,TSS,10,0.57,221,0.62,349,0.57,1019,0.62,2062
+Landsat 8/9,Chlorophyll-a,18,0.17,478,0.14,779,0.18,2334,0.29,4740
