@@ -1,0 +1,33 @@
+sensor,target,model,n,R2,MAPE,rho
+Sentinel-2,Turbidity,Original RF,3890,0.617,27.352,0.813
+Sentinel-2,Secchi depth,Original RF,4956,0.766,20.493,0.881
+Sentinel-2,TSS,Original RF,2380,0.629,25.658,0.776
+Sentinel-2,Chlorophyll-a,Original RF,5483,0.706,34.836,0.852
+Sentinel-2,Turbidity,Raw-band RF,3890,0.599,27.529,0.8
+Sentinel-2,Secchi depth,Raw-band RF,4956,0.734,21.711,0.865
+Sentinel-2,TSS,Raw-band RF,2380,0.61,25.844,0.767
+Sentinel-2,Chlorophyll-a,Raw-band RF,5483,0.657,37.857,0.824
+Sentinel-2,Turbidity,Raw-band boosting,3890,0.572,28.719,0.782
+Sentinel-2,Secchi depth,Raw-band boosting,4956,0.737,22.226,0.864
+Sentinel-2,TSS,Raw-band boosting,2380,0.604,27.276,0.761
+Sentinel-2,Chlorophyll-a,Raw-band boosting,5483,0.682,37.363,0.836
+Sentinel-2,Turbidity,Tuned boosting (ratios),3890,0.601,28.872,0.804
+Sentinel-2,Secchi depth,Tuned boosting (ratios),4956,0.768,20.662,0.881
+Sentinel-2,TSS,Tuned boosting (ratios),2380,0.624,26.61,0.769
+Sentinel-2,Chlorophyll-a,Tuned boosting (ratios),5483,0.702,36.065,0.85
+Landsat 8/9,Turbidity,Original RF,3354,0.51,33.713,0.73
+Landsat 8/9,Secchi depth,Original RF,3992,0.584,27.832,0.776
+Landsat 8/9,TSS,Original RF,2062,0.496,32.663,0.686
+Landsat 8/9,Chlorophyll-a,Original RF,4740,0.408,50.485,0.618
+Landsat 8/9,Turbidity,Raw-band RF,3354,0.532,32.822,0.743
+Landsat 8/9,Secchi depth,Raw-band RF,3992,0.617,27.11,0.8
+Landsat 8/9,TSS,Raw-band RF,2062,0.514,32.041,0.701
+Landsat 8/9,Chlorophyll-a,Raw-band RF,4740,0.43,51.709,0.642
+Landsat 8/9,Turbidity,Raw-band boosting,3354,0.539,32.16,0.744
+Landsat 8/9,Secchi depth,Raw-band boosting,3992,0.623,25.587,0.804
+Landsat 8/9,TSS,Raw-band boosting,2062,0.504,32.765,0.691
+Landsat 8/9,Chlorophyll-a,Raw-band boosting,4740,0.431,50.369,0.643
+Landsat 8/9,Turbidity,Tuned boosting (ratios),3354,0.517,33.964,0.732
+Landsat 8/9,Secchi depth,Tuned boosting (ratios),3992,0.582,28.329,0.778
+Landsat 8/9,TSS,Tuned boosting (ratios),2062,0.492,32.69,0.68
+Landsat 8/9,Chlorophyll-a,Tuned boosting (ratios),4740,0.398,51.198,0.609

@@ -121,3 +121,15 @@ python scripts/revision/h3_analysis.py data data/hls data/wqp_sampling_times.csv
 ```
 
 `h3_analysis.py` also needs the EKY Water Quality Portal result file (sampling times for the EKY test stations), downloadable from https://www.waterqualitydata.us with organization 21KY_WQX.
+
+## Supplementary materials
+
+`supplementary/Supplementary_Materials.docx` contains Tables S1–S4 and Figure S1 of the article. Their source files:
+
+| Item | Source |
+|---|---|
+| Table S1 (total iron) | `results/total_iron_cv.csv` |
+| Table S2 (leave-one-reservoir-out) | `results/eky_test_leave_one_reservoir_out.csv` |
+| Table S3 (alternative learners, independent analyst) | `results/alternative_learners_cv.csv` |
+| Table S4 (coalfield holdout) | `results/robustness_checks.csv` |
+| Figure S1 (error vs time gap) | `results/error_vs_gap_v2.csv`, `figures/FigureS1_error_vs_gap.png` |
