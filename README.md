@@ -122,9 +122,36 @@ python scripts/revision/h3_analysis.py data data/hls data/wqp_sampling_times.csv
 
 `h3_analysis.py` also needs the EKY Water Quality Portal result file (sampling times for the EKY test stations), downloadable from https://www.waterqualitydata.us with organization 21KY_WQX.
 
+## Revision analyses (v1.2.0): atmospheric correction and new test data
+
+Added in response to the editorial comment on atmospheric correction. The Level-1 scenes behind every EKY test matchup (26 Sentinel-2 L1C, 23 Landsat 8/9 Collection 2 Level-1) were reprocessed with ACOLITE (https://github.com/acolite/acolite, commit 929063a), and the final models (trained on standard products) were applied, unchanged, to both versions of the same samples (Tables S5 and S6).
+
+ACOLITE settings: dark spectrum fitting with `dsf_aot_estimation=fixed`, `dsf_residual_glint_correction=True`, `ancillary_data=False`, `s2_target_res=10`, `l2w_parameters=rhow_*`, and `limit` set to the extent of each scene's test stations ±0.05°.
+
+| File | Contents |
+|---|---|
+| `earth_engine/eky_scene_list.js` | Finds the Sentinel-2 L1C / Landsat C2 L1 product IDs behind each EKY test matchup |
+| `data/acolite/eky_test_scene_list.csv` | Output of the script above (57 matchups, 49 products) |
+| `scripts/revision/acolite_get_s2.py` | Downloads a Sentinel-2 L1C SAFE from the Google Cloud public archive |
+| `scripts/revision/acolite_get_landsat.py` | Downloads a Landsat C2 L1 bundle through the USGS M2M API (needs your own M2M token in `~/.usgs_m2m`, format `username token`) |
+| `scripts/revision/acolite_pipeline.py` | Download → ACOLITE → 3 × 3-pixel water median at each station → delete scene |
+| `scripts/revision/acolite_compare.py` | Band agreement and model scores, standard vs ACOLITE |
+| `data/acolite/acolite_extract_*.csv` | ACOLITE ρs (and ρw) station medians |
+| `data/acolite/acolite_eky_test_matchups.csv` | EKY test matchups with standard and ACOLITE (`*_aco`) reflectance |
+| `results/acolite_band_agreement.csv`, `results/acolite_model_scores.csv` | Tables S5 and S6 |
+
+```bash
+python scripts/revision/acolite_pipeline.py WORKDIR S2 path/to/acolite   # then L for Landsat
+python scripts/revision/acolite_compare.py
+```
+
+The ACOLITE L2R/L2W NetCDF files (about 3 GB) are not included; the pipeline regenerates them.
+
+Additional test data: the only public in-lake data from an EKY reservoir after 2023 are U.S. Army Corps of Engineers (Nashville District) samples from Martins Fork Lake in 2022 (Water Quality Portal, organization `USACOEND`). `earth_engine/martinsfork_matchups.js` extracts their matchups (`data/martins_fork/`); only three matchups from one sampling date resulted, too few to test.
+
 ## Supplementary materials
 
-`supplementary/Supplementary_Materials.docx` contains Tables S1–S4 and Figure S1 of the article. Their source files:
+`supplementary/Supplementary_Materials.docx` contains Tables S1–S6 and Figure S1 of the article. Their source files:
 
 | Item | Source |
 |---|---|
