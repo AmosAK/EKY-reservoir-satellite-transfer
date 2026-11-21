@@ -122,6 +122,14 @@ python scripts/revision/h3_analysis.py data data/hls data/wqp_sampling_times.csv
 
 `h3_analysis.py` also needs the EKY Water Quality Portal result file (sampling times for the EKY test stations), downloadable from https://www.waterqualitydata.us with organization 21KY_WQX.
 
+## Changes in v1.2.1
+
+- `scripts/revision/h3_analysis.py`: EKY sampling times are now matched by column name (they were mislabelled, so EKY test gaps were not computed), and the error-by-gap table is written with the Figure S1 bins to `results/error_vs_gap_v2.csv`.
+- `results/gap_coverage.csv`: regenerated with the corrected script (two Sentinel-2 and four Landsat EKY test matchups within ±3 h; a third Sentinel-2 matchup falls at 3.0 h). Adds a ±6 h column.
+- README: cross-sensor agreement is Table 11 of the article.
+
+All other results are unchanged; a full rerun of `run_all.py` and the revision scripts reproduces them exactly.
+
 ## Revision analyses (v1.2.0): atmospheric correction and new test data
 
 Added in response to the editorial comment on atmospheric correction. The Level-1 scenes behind every EKY test matchup (26 Sentinel-2 L1C, 23 Landsat 8/9 Collection 2 Level-1) were reprocessed with ACOLITE (https://github.com/acolite/acolite, commit 929063a), and the final models (trained on standard products) were applied, unchanged, to both versions of the same samples (Tables S5 and S6).

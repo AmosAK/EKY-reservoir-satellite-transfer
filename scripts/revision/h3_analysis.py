@@ -21,7 +21,8 @@ def sampling_times():
     t = t[t.get("ActivityMediaName", "Water").fillna("Water").str.contains("Water")]
     e = pd.read_csv(EKYRAW, dtype=str, usecols=lambda c: c in ["MonitoringLocationIdentifier", "ActivityStartDate",
                     "ActivityStartTime/Time", "ActivityStartTime/TimeZoneCode"])
-    e.columns = ["station", "date", "Time", "TimeZoneCode"]
+    e = e.rename(columns={"MonitoringLocationIdentifier": "station", "ActivityStartDate": "date",
+                          "ActivityStartTime/Time": "Time", "ActivityStartTime/TimeZoneCode": "TimeZoneCode"})
     t = pd.concat([t[["station", "date", "Time", "TimeZoneCode"]], e], ignore_index=True).dropna(subset=["Time"])
     off = t.TimeZoneCode.map(TZ)
     hh = pd.to_timedelta(t.Time, errors="coerce")
@@ -140,11 +141,11 @@ for k, (d0, fz) in data.items():
         for a, b in GroupKFold(5).split(X, y, g):
             p[b] = RandomForestRegressor(300, **RF).fit(X[a], y[a]).predict(X[b])
         d["abs_log_err"] = np.abs(p - y)
-        bins = pd.cut(d.gap_h, [0, 3, 6, 24, 48, 72, 100], include_lowest=True)
+        bins = pd.cut(d.gap_h, [0, 3, 24, 48, 72, 100], include_lowest=True)
         s = d.groupby(bins, observed=True).abs_log_err.agg(["median", "count"])
         for iv, r_ in s.iterrows():
             rows.append(dict(sensor=k, parameter=name, gap_bin_h=str(iv), median_abs_log_err=round(r_["median"], 3),
                              n=int(r_["count"])))
         rho = spearmanr(d.gap_h, d.abs_log_err, nan_policy="omit")[0]
         rows.append(dict(sensor=k, parameter=name, gap_bin_h="spearman(gap, error)", median_abs_log_err=round(rho, 3), n=int(d.gap_h.notna().sum())))
-E = pd.DataFrame(rows); E.to_csv(f"{OUT}/error_vs_gap.csv", index=False); print(E.to_string(index=False))
+E = pd.DataFrame(rows); E.to_csv(f"{OUT}/error_vs_gap_v2.csv", index=False); print(E.to_string(index=False))
