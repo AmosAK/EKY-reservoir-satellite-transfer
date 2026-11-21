@@ -42,7 +42,7 @@ python run_all.py --coalfield path/to/regions.shp
 | `03_paired_sensor_comparison.py` | Sentinel-2 vs Landsat 8/9 on identical samples (Tables 3 and 4) | `results/paired_comparison_*.csv` |
 | `04_permutation_importance.py` | Permutation importance (Figure 6) | `results/permutation_importance.csv` |
 | `05_robustness_checks.py` | Cloud limits (Table 7), state-balanced and Appalachian-only training, coalfield holdout (Table S4) | `results/robustness_checks.csv` |
-| `06_crosssensor_agreement.py` | Same-day Sentinel-2/Landsat agreement (Table 9) | `results/crosssensor_agreement.csv` |
+| `06_crosssensor_agreement.py` | Same-day Sentinel-2/Landsat agreement (Table 11) | `results/crosssensor_agreement.csv` |
 | `07_figures.py` | Figures 4–8 | `figures/*.png` |
 
 All scripts use fixed random seeds, so repeated runs give identical results. Point estimates (R², ρ, MAPE, bias ratio) match the article. Bootstrap confidence bounds are Monte Carlo estimates and can differ from the published values by a few hundredths (more for TSS, which has only 8–10 test samples). Small differences can also occur across scikit-learn versions.
